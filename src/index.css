@@ -5,9 +5,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: darkslateblue
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media only screen and (max-width:768px){
+  .signup {
+    margin-top:75%
+  }
+  
+  .login {
+    margin-top:82.5%
+  }
+}
+
+@media only screen and (min-width:769px){
+  .signup{
+    margin-top: 30%
+  }
+  
+  .login {
+    margin-top: 35%
+  }
+}
+
+input {
+  margin: .5rem 0;
+}
+
+.card {
+  font-size: 18pt;
+  width: 75%
+}
+
+.card-body {
+  font-size: 14pt
 }
