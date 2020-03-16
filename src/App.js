@@ -17,7 +17,7 @@ function App() {
       setSessionToken(localStorage.getItem('token'))
     }
     else {
-      localStorage.setItem('token', 'no user')
+      localStorage.setItem('token', '')
       setSessionToken('')
     }
   }

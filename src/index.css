@@ -15,21 +15,29 @@ code {
 
 @media only screen and (max-width:768px){
   .signup {
-    margin-top:75%
+    margin-top:75%;
+    margin-left: auto;
+    margin-right: auto
   }
   
   .login {
-    margin-top:82.5%
+    margin-top:82.5%;
+    margin-left: auto;
+    margin-right: auto
   }
 }
 
 @media only screen and (min-width:769px){
   .signup{
-    margin-top: 30%
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto
   }
   
   .login {
-    margin-top: 35%
+    margin-top: 35%;
+    margin-left: auto;
+    margin-right: auto
   }
 }
 

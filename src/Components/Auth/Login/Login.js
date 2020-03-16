@@ -32,8 +32,8 @@ export default function Login(props) {
         <Form onSubmit={handleSubmit}>
             <Input value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" type="text" />
             <Input value={pass} onChange={(e) => setPass(e.target.value)} placeholder="Password" type="password" />
-            <Button type="submit">Submit</Button>
-            <Button color="info" className="float-right" onClick={() => props.setSS(!props.SS)}>Need an account?</Button>
+            <Button color="info" type="submit">Sign In</Button>
+            <Button className="float-right" onClick={() => props.setSS(!props.SS)}>Sign Up</Button>
         </Form>
     )
 }

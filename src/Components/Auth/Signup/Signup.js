@@ -1,6 +1,5 @@
 import React from 'react'
 import { Form, Input, Button } from 'reactstrap'
-import './Signup.css'
 
 export default function Signup(props){
     const [username, setUsername] = React.useState('')
@@ -39,8 +38,8 @@ export default function Signup(props){
             <Input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" type="email" />
             <Input value={pass} onChange={(e) => setPass(e.target.value)} placeholder="Password" type="password" />
             <Input value={cpass} onChange={(e) => setCPass(e.target.value)} placeholder="Confirm Password" type="password" />
-            <Button type="submit">Submit</Button>
-            <Button color="info" className="float-right" onClick={() => props.setSS(!props.SS)}>Already have an account?</Button>
+            <Button type="submit">Sign Up</Button>
+            <Button color="info" className="float-right" onClick={() => props.setSS(!props.SS)}>Sign In</Button>
         </Form>
     )
 }
