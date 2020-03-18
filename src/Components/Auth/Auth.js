@@ -10,13 +10,19 @@ export default function Auth(props) {
         <Container>
             <Row>
                 <Col>
-                    <Card className={signupShowing ? "signup" : "login"}>
+                    <Row>
+                        <Col className={signupShowing ? "signup" : "login"} style={{ textAlign: "center" }}>
+                            <img className="authlogo" src="../../Assets/curvesfordays.png" alt="title" />
+                        </Col>
+                    </Row>
+                    {/* className={signupShowing ? "signup" : "login"} */}
+                    <Card className={signupShowing ? "auth-card-signup" : "auth-card-login"}>
                         <CardBody>
                             {
                                 signupShowing ?
-                                <Signup setSS={setSignupShowing} SS={signupShowing}/>
-                                :
-                                <Login updateToken={props.updateToken} setSS={setSignupShowing} SS={signupShowing}/>
+                                    <Signup setSS={setSignupShowing} SS={signupShowing} />
+                                    :
+                                    <Login updateToken={props.updateToken} setSS={setSignupShowing} SS={signupShowing} />
                             }
                         </CardBody>
                     </Card>
